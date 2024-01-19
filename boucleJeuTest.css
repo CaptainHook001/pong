@@ -1,45 +1,37 @@
-body{
-  background-color: #383838;
-  height: 100px
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
 }
 
-.centrage{
-  margin: auto;
+.game-container {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-color: #111;
+    border: 2px solid #fff;
 }
 
-.zoneJeu{
-  background-color: black;
-  height: 750px;
-  width: 1200px;
-  position: absolute;
+.ball, .paddle {
+    position: absolute;
+    background-color: #fff;
+    width: 20px;
+    height: 100px;
 }
 
-.Score{
-  font-size: 2em;
-  color : white;
-  width : 1200px;
-  font-family: sans-serif;
-  background-color: black;
-  border-bottom: 3px solid white;
+#ball {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
 }
 
-.info{
-  font-size: 20px;
-}
-.posScore{
-  margin-left: 90px;
-  margin-right: 90px;
+#leftPaddle {
+    left: 10px;
 }
 
-
-.infoDemarrage{
-  color : white;
-  font-family: sans-serif;
-  font-size: 2em;
-}
-
-#pause{
-  height: 50px;
-  width: 100px;
-  font-size: 1em;
+#rightPaddle {
+    right: 10px;
 }
